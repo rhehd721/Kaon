@@ -22,7 +22,7 @@ Revision이 1 증가)
 <br><br>
 6. Revert(로컬 저장소의 소스 코드 내용을 이전 상태로 돌리는 명령어이다.)
 #로컬 저장소 복사본 exampleSource.java에 행했던 변경들을 모두 취소
-- svn revert exampleSource.java
+    - svn revert exampleSource.java
 <br><br>
 7. Log(저장소에 어떠한 것들이 변경 되었는지 revison을 통해 확인 할 수 있는 명령어이다.)
 - svn log
