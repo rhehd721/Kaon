@@ -1,0 +1,12 @@
+tftp -g -r [tftp서버의 받을파일] [서버IP] -l [로컬다운로드경로]
+	-g : get 하는 옵션
+	-r : remote 파일
+	-l : local file.
+
+
+ex) tftp 서버에서 a.zip 파일을 받을 경우 ~~
+	#tftp -g -r 'a.zip' 192.168.0.109 -l /media/ram/a.zip
+ex) 로컬 a.zip 파일을 서버 로 보낼 경우 ~~
+	#tftp -p -r 'a.zip' 192.168.0.109 -l /media/ram/a.zip
+	or
+	#tftp -l /media/ram/a.zip -p 192.168.0.109

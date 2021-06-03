@@ -1,0 +1,31 @@
+ftp 접속
+	예 ) ftp 192.168.12.2
+	id 입력
+	pass 입력
+	성공로그 : 230 User root logged in.
+
+
+1개파일 내려받기
+	자료의 흐름 : Remote서버 -> Target서버
+	get 대상파일
+	예) get abcd.txt
+
+
+1개파일 올리기
+	자료의 흐름 : Target서버 -> Remote서버
+	put 대상파일
+	예) put abcd.txt
+
+
+여러개의 파일 내려받기
+	자료의 흐름 : Remote서버 -> Target서버
+	mget 대상파일*.txt
+	예) mget *.txt
+
+여러개의 파일 올리기
+	자료의 흐름 : Target서버 -> Remote서버
+	mput 대상파일*.txt
+	예) mput *.txt
+
+
+출처: https://sybd.tistory.com/4 [정긍정]
