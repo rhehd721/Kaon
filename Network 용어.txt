@@ -71,7 +71,15 @@ BSSID : Basic Service Set Identifier
 SSID : Service Set IDentifier
 	무선랜을 통해 전송되는 패킷들의 각 헤더에 덧붙여지는 32바이트 길이의 고유 식별자
 
-출처: https://kimseunghyun76.tistory.com/312 [하루에 하나씩.....]
-	
+
+라우팅(영어: routing)
+	어떤 네트워크 안에서 통신 데이터를 보낼 때 최적의 경로를 선택하는 과정이다.
+
+로드 밸런서(Load Balancer)
+	여러 대의 Server에게 균등하게 Traffic을 분산시켜주는 역할을 하는 것이 Load Balancer입니다.
+
+방화벽(firewall)
+	네트워크 트래픽을 모니터링하고 제어하는 네트워크 보안 시스템이다.
+	서로 다른 네트워크를 지나는 데이터를 허용하거나 거부하거나 검열, 수정하는 하드웨어나 소프트웨어 장치이다
 
 

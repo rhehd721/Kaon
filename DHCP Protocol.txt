@@ -1,0 +1,20 @@
+Broadcast = 1 : N (=불특정 다수)
+
+Multicast = 1 : N (=특정 다수)
+
+Unicast = 1 : 1
+
+4-Way-hanshake
+	1. Discover : 노트북 -> DHCP Server (DHCP Server야 어디있니? )
+	1. Offer : DHCP Server -> 노트북 (노트북아 나 여기있어! )
+	1. Requset : 노트북 -> DHCP Server (DHCP Server야 나 IP좀 할당해줘 )
+	1. Ack or NAck : DHCP Server -> 노트북 (할당 됐어 or 할당 실패했어 )
+
+T-1 주기
+
+T-2 주기
+
+* 명령어 * 
+$ nslookup 도메인 = 해당 도메인의 IP주소 리턴
+$ ipconfig /release = IP 지우기
+$ ipconfig /renew = IP 받기
