@@ -96,5 +96,3 @@ add 후 commit을 안해주면 나중에 commit을 해도 안 올라간다.)
 
 - 원격 저장소 정보 확인
     - svn info svn://127.0.0.1/TestRepo1
-
-
