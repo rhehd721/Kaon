@@ -1,0 +1,61 @@
+Makefile
+반복적인 빌드 과정에서 변경된 소스코드에 
+의존성(Dependency)이 있는 대상들만 추려서 다시 빌드하는 기능이다.
+
+CC=<컴파일러>
+CFLAGS=<컴파일 옵션>
+LDFLAGS=<링크 옵션>
+LDLIBS=<링크 라이브러리 목록>
+OBJS=<Object 파일 목록>
+TARGET=<빌드 대상 이름>
+ 
+all: $(TARGET)
+ 
+clean:
+    rm -f *.o
+    rm -f $(TARGET)
+ 
+$(TARGET): $(OBJS)
+$(CC) -o $@ $(OBJS)
+
+
+
+EX1
+
+CC=gcc
+CFLAGS=-g -Wall
+TARGET=a.out
+OBJS=a.o b.o main.o
+ 
+$(TARGET): $(OBJS)
+    $(CC) -o $@ $(OBJS)
+
+a.o : a.c
+    $(CC) -c -o a.o a.c
+
+b.o : b.c
+    $(CC) -c -o b.o b.c
+
+main.o : main.c
+    $(CC) -c -o main.o main.c
+
+clean:
+    rm $(OBJECT) $(TARGET)
+
+
+EX2
+
+    a.out : a.o b.o main.o
+        gcc -o a.out a.o b.o main.o
+    
+    a.o : a.c
+        gcc -c -o a.o a.c
+    
+    b.o : b.c
+        gcc -c -o b.o b.c
+    
+    main.o : main.c
+        gcc -c -o main.o main.c
+    
+    clean:
+        rm *.o a.out
