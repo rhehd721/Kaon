@@ -7,18 +7,18 @@
 <br><br>
 2. Checkout (저장소에서 소스를 받아 오는 명령어로, 받아온 소스에는 소스 뿐만이 아니라 버전관리를 위한 파일도 같이 받아 온다.
 지우거나 변경시 저장소와 연결 불가능)
-	- svn checkout svn+ssh://svn-domain/svn/example/trunk example
+	- svn checkout[co] svn+ssh://svn-domain/svn/example/trunk example
 <br><br>
 3. Export (Checkout과 달리 버전관리 파일을 뺀 순수한 소스만 가져오는 명령어로 마지막에 사용한다.)
 	- svn export svn+ssh://svn-domain/svn/example/trunk example
 <br><br>
 4. Commit (로컬 저장소의 체크아웃 한 소스의 변경된 내용(수정, 파일 추가, 삭제 등)을 저장소에 저장하여 갱신 하는 명령어이다.
 Revision이 1 증가)
-	- svn commit
+	- svn commit[ci] -m "수정사항"
 <br><br>
 5. Update(체크아웃 해서 받은 소스를 서버 저장소의 최신 소스 버전으로 업데이트 하는 명령어이다.
 소스 수정이나 Commit 하기전에 한 번씩 해주는게 좋다.)
-	- svn update
+	- svn update[up]
 <br><br>
 6. Revert(로컬 저장소의 소스 코드 내용을 이전 상태로 돌리는 명령어이다.)
 #로컬 저장소 복사본 exampleSource.java에 행했던 변경들을 모두 취소
